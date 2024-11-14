@@ -52,7 +52,7 @@ public class AnalysisTests {
             AnalysisRetainMode mode, Class<?>... analysisClasses) {
         var ctx = AnalysisContext.builder()
                 .register(QiheBuiltInAnalysisConfig.class)
-                .register(AppAnalysisConfig.class)
+                .scan("com.example.analysis")
                 .withOptions(options)
                 .build();
         return new QiheAnalysisEngine(ctx, design)
