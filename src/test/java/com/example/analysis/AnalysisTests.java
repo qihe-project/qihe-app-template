@@ -12,6 +12,9 @@ import pascal.qihe.util.collection.ClassInstanceMap;
 import java.io.IOException;
 import java.nio.file.Path;
 
+/**
+ * Utilities for testing analyses.
+ */
 public class AnalysisTests {
 
     public final static Path TESTCASE_DIR = TestCases.testCasesPathOf("analysis/");

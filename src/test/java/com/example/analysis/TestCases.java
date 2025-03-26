@@ -2,9 +2,9 @@ package com.example.analysis;
 
 import pascal.qihe.platform.io.Frontend;
 import pascal.qihe.platform.io.binary.DesignLoader;
-import pascal.qihe.platform.io.verilog.SlangFrontend;
 import pascal.qihe.platform.io.text.DesignParser;
 import pascal.qihe.platform.io.text.DesignPrinter;
+import pascal.qihe.platform.io.verilog.SlangFrontend;
 import pascal.qihe.platform.io.verilog.VerilogFrontend;
 import pascal.qihe.platform.ir.Design;
 import pascal.qihe.util.exception.NoInstanceError;
