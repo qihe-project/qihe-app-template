@@ -1,18 +1,18 @@
 # Qihe Application Template
 
-A starter template for building Verilog static analysis tools using the [Qihe framework][qihe].
+A starter template for building Verilog static analysis tools using the [Qihe][qihe].
 
 This project provides:
 
 - A `HelloAnalysis` example demonstrating how to develop a new analysis (as explained in
   the [tutorial][new-analysis-tutorial])
-- The same command-line interface (CLI) as Qihe's [`platform-cli`][platform-cli] module for executing analyses
+- The same command-line tool as [Qihe][qihe] provides for executing analyses
 
-**Key Notes:**
+**Keynotes:**
 
-1. This template doesn't cover analysis development specifics - refer to the [Qihe tutorials][platform] for
-   detailed guidance.
-2. CLI usage documentation is available in the `platform-cli` [README][platform-cli].
+1. This template doesn't cover analysis development specifics.
+   Please refer to the [Qihe tutorials][tutorials] for detailed guidance.
+2. The usage of Qihe's command-line tool documentation is available [here][cli].
 
 ## Prerequisites
 
@@ -73,10 +73,10 @@ This behaves identically to:
 qihe <argument>...
 ```
 
-[qihe]: https://github.com/pascal-lab/qihe/
+[qihe]: https://github.com/qihe-project/qihe/
 
-[platform]: https://github.com/pascal-lab/qihe/tree/master/platform
+[cli]: https://qihe.pascal-lab.net/qihe/platform-cli/getting-started.html
 
-[platform-cli]: https://github.com/pascal-lab/qihe/tree/master/platform-cli
+[tutorials]: https://qihe.pascal-lab.net/qihe/platform/getting-started.html#tutorials
 
-[new-analysis-tutorial]: https://github.com/pascal-lab/qihe/blob/doc/platform/src/main/docs/new-analysis.md
+[new-analysis-tutorial]: https://qihe.pascal-lab.net/qihe/platform/new-analysis.html
