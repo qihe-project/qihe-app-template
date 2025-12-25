@@ -21,19 +21,34 @@ This project provides:
 
 ### Installing Qihe Locally
 
-Since Qihe isn't currently available in Maven Central, you'll need to install it to your local Maven repository:
+Since Qihe is not yet published to Maven Central, you must install it to your local Maven repository:
 
 ```shell
 # Clone the Qihe repository
 git clone https://github.com/pascal-lab/qihe.git
 cd qihe
+
 # Build and test Qihe
 ./gradlew build 
+
 # Install to local Maven repository
 ./gradlew publishToMavenLocal 
 ```
 
-> Note: The project's `build.gradle.kts` is pre-configured to check your local Maven repository for Qihe dependencies.
+> **Note:** This project's `build.gradle.kts` is pre-configured to resolve dependencies from your local Maven repository.
+
+**Version Compatibility:**
+
+Ensure the version in this template's `build.gradle.kts` matches your installed Qihe version:
+
+```kotlin
+dependencies {
+    implementation("pascal.qihe:platform:<version>")
+    // ...
+}
+```
+
+You can find the Qihe version in the `gradle.properties` file within the Qihe repository.
 
 ## Getting Started
 
@@ -73,10 +88,10 @@ This behaves identically to:
 qihe <argument>...
 ```
 
-[qihe]: https://github.com/qihe-project/qihe/
+[qihe]: https://qihe.pascal-lab.net
 
-[cli]: https://qihe.pascal-lab.net/qihe/platform-cli/getting-started.html
+[cli]: https://qihe-docs.pascal-lab.net/platform-cli/getting-started.html
 
-[tutorials]: https://qihe.pascal-lab.net/qihe/platform/getting-started.html#tutorials
+[tutorials]: https://qihe-docs.pascal-lab.net/platform/getting-started.html#tutorials
 
-[new-analysis-tutorial]: https://qihe.pascal-lab.net/qihe/platform/new-analysis.html
+[new-analysis-tutorial]: https://qihe-docs.pascal-lab.net/platform/new-analysis.html

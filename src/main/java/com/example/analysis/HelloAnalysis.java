@@ -2,10 +2,10 @@ package com.example.analysis;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pascal.qihe.framework.core.DiagnosticManager;
-import pascal.qihe.framework.core.DiagnosticReporter;
 import pascal.qihe.framework.core.annotation.Analysis;
 import pascal.qihe.framework.core.annotation.InjectAnalyses;
+import pascal.qihe.framework.core.diagnostic.DiagnosticManager;
+import pascal.qihe.framework.core.diagnostic.DiagnosticRecorder;
 import pascal.qihe.platform.analysis.common.HierarchyAnalysis;
 import pascal.qihe.platform.ir.Design;
 
@@ -22,13 +22,13 @@ public class HelloAnalysis {
     // ----- Dependencies -----
 
     private final HierarchyAnalysis hierarchy;
-    private final DiagnosticReporter reporter;
+    private final DiagnosticRecorder reporter;
 
     @InjectAnalyses
     public HelloAnalysis(HierarchyAnalysis hierarchy,
                          DiagnosticManager diagnosticManager) {
         this.hierarchy = hierarchy;
-        this.reporter = diagnosticManager.getReporter(getClass());
+        this.reporter = diagnosticManager.getRecorder(getClass());
     }
 
     // ----- State in analysis -----
@@ -42,7 +42,7 @@ public class HelloAnalysis {
         logger.info("The design has {} modules", design.getModules().size());
         if (design.getModules().isEmpty()) {
             result = "Sorry, " + userName + ". No top module found";
-            reporter.warning(design, "The design is empty.");
+            reporter.warn(design, "The design is empty.");
         } else {
             result = "Hello, " + userName + ". The top modules are: " + hierarchy.getTopModules();
         }
