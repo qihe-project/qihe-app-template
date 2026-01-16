@@ -19,6 +19,7 @@ out/
 
 # Generated files
 .idea/**/contentModel.xml
+.idea/copilot.data.migration.agent.xml
 
 # Sensitive or high-churn files
 .idea/**/dataSources/
