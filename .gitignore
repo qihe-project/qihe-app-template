@@ -1,4 +1,5 @@
 .gradle
+buildSrc/.kotlin
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
@@ -19,7 +20,8 @@ out/
 
 # Generated files
 .idea/**/contentModel.xml
-.idea/copilot.data.migration.agent.xml
+.idea/**/copilotDiffState.xml
+.idea/**/copilot.*.xml
 
 # Sensitive or high-churn files
 .idea/**/dataSources/
