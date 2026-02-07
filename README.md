@@ -25,7 +25,7 @@ Since Qihe is not yet published to Maven Central, you must install it to your lo
 
 ```shell
 # Clone the Qihe repository
-git clone https://github.com/pascal-lab/qihe.git
+git clone https://github.com/qihe-project/qihe.git
 cd qihe
 
 # Build and test Qihe
