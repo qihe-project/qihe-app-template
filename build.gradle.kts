@@ -18,7 +18,7 @@ java {
 }
 
 dependencies {
-    implementation("pascal.qihe:platform:1.1.0-SNAPSHOT")
+    implementation("pascal.qihe:platform:1.2.0-SNAPSHOT")
 
     // JUnit test.
     testImplementation(platform("org.junit:junit-bom:6.0.2"))
